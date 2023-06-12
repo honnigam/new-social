@@ -1,6 +1,7 @@
+/* eslint-disable react/prop-types */
 import styles from './Avatar.module.css'
 
-// eslint-disable-next-line react/prop-types
+
 export function Avatar({ hasBorder = true, src }){
   return (
     <img 

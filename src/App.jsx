@@ -45,15 +45,13 @@ function App() {
   return (
     <div>
       <Header/>
-
-      <div className={styles.wrapper}>
-        
-        <Sidebar />
-        
+      <div className={styles.wrapper}>       
+        <Sidebar />       
         <main>
           {posts.map( post => {
             return (
               <Post 
+                key={post.id}
                 author={post.author}
                 content={post.content}
                 publishedAt={post.publishedAt}
